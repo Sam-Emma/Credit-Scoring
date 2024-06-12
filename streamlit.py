@@ -1,4 +1,4 @@
-import stream as st
+import streamlit as st
 
 # Import your credit score calculation functions
 from main1 import calculate_farmer_bio_credit_score, calculate_capital_credit_score, calculate_character_credit_score, calculate_collateral_credit_score, calculate_capacity_credit_score
@@ -26,7 +26,7 @@ def calculate_total_credit_score(farm_ownership, farm_size, education_level, mar
 # User input fields for farmer bio data
 st.header("Farmer Bio Data")
 name = st.text_input("Name")
-address = st.text_input("Name")
+address = st.text_input("Address")
 age = st.number_input("Age", min_value=18)
 education_level = st.selectbox("Education Level", ["Informal", "Elementary", "College/ High School", "Tertiary"])
 marital_status = st.selectbox("Marital Status", ["Single", "Married"])
